@@ -36,7 +36,7 @@
               :source-paths ["src"]
               :compiler {:output-to "resources/public/js/compiled/om_tut.js"
                          :main om-tut.core                         
-                         :optimizations :advanced
+                         :optimizations :simple
                          :pretty-print false}}]}
 
   :figwheel {

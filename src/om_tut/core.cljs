@@ -3,7 +3,6 @@
       [om.core :as om :include-macros true]
       [om.dom :as dom :include-macros true]
       [cemerick.pprng :as rng]
-      [figwheel.client :as fw]
       [goog.string :as gstring]
       [goog.string.format]))
 
