@@ -24,6 +24,9 @@
     .page {
         position: inherit;
     }
+    .projectlink {
+        display: none;
+    }
 }
 
 @media screen {
@@ -130,7 +133,16 @@
 
 }
 
+.projectlink {
+    position: absolute;
+    width: 97%;
+    text-align: right;
+    color: #433A35;
+    padding: 10px;
+}
+
 li {
   color: #433A35;
   opacity: 0.8;
 }
+
