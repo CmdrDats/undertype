@@ -120,7 +120,8 @@
           nil
           (if v
             (dom/textarea
-              #js {:style #js {:width "100%" :height (- (second (:cursor data)) 50)}}
+              #js {:className "copyarea"
+                   :style #js {:width "100%" :height (- (second (:cursor data)) 50)}}
               (:text data)))
           (dom/button #js {:className "copybutton"
                            :onClick   (fn [e & _]
@@ -169,7 +170,7 @@
 
 
 (defn snd [n]
-  (js/buzz.sound. (str "sounds/" n) #js {:formats #js ["wav"]}))
+  (js/buzz.sound. (str "sounds/" n) #js {:formats #js ["wav" "mp3" "ogg"]}))
 
 (def sounds
   {:key       (map #(snd (str "key-" (gstring/format "%02d" (inc %)))) (range 22))

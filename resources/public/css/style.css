@@ -85,6 +85,7 @@
     font: 150px special_eliteregular;
     text-align: right;
     padding: 20px;
+    z-index: -1;
 }
 
 .cover {
@@ -139,6 +140,10 @@
     text-align: right;
     color: #433A35;
     padding: 10px;
+}
+
+.copyarea {
+    z-index: 2;
 }
 
 li {
